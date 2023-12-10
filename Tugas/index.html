@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ikbaar zaki</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+    /* ... (CSS lainnya tetap sama) ... */
+    
+
+    
+</style>
+<body>
+    <a href="index.php">Buka File PHP</a>
+</body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#experience">My Experience</a></li>
+            <li><a href="#contact">My Contact</a></li>
+            <li><a href="#guestbook">Guestbook</a></li>
+            <li><a href="http://localhost/Tugas/index.php">Biodata</a></li> <!-- Tambah navigasi untuk mengisi biodata -->
+        </ul>
+    </nav>
+
+    <!-- Konten lainnya tetap sama -->
+    <div class="container">
+        <h1 id="home">Home</h1>
+        <img src="123.jpg" alt="Foto Home" class="profile-image">
+        <h2>Hai, Saya Ikbaar Zaki</h2>
+        <p>Saya adalah seorang mahasiswa IT di salah satu kampus di Samarinda yang tahun ini sudah akan memasuki semester 3</p>
+    </div>
+    
+    <div class="container">
+        <h1 id="about">About Me</h1>
+        <img src="345.jpg" alt="Foto Profil" class="profile-image">
+        <p>Saya adalah seorang mahasiswa IT di salah satu kampus di Samarinda</p>
+        <p>Saya berasal dari Bandung, dan saat saya masuk IT saya sedikit kesulitan karena saya dari SMA, tapi akan diusahakan semaksimal mungkin.</p>
+        <p>Saya bukan orang yang memiliki banyak prestasi tapi saya punya beberapa pengalaman</p>
+    </div>
+    
+    <div class="container">
+        <h1 id="experience">My Experience</h1>
+        <div class="icon-wrapper">
+            <div class="icon">
+                <i data-feather="activity"></i>
+                <h4>Athlete</h4>
+                <p>: Sebagai Atlet 2016-2018</p>
+            </div>
+            <div class="icon">
+                <i data-feather="cpu"></i>
+                <h4>Gamer</h4>
+                <p>: Sebagai Gamer 2018-2022</p>
+            </div>
+            <div class="icon">
+                <i data-feather="shield"></i>
+                <h4>Martial Art</h4>
+                <p>: Sebagai Martial Art 2022-Sekarang</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h1 id="contact">My Contact</h1>
+        <p><span class="contact-icon"><i data-feather="phone"></i></span>Nomor Ponsel: +62 812-7485-0960</p>
+        <p><span class="contact-icon"><i data-feather="mail"></i></span>Email: ikbaarzaki@gmail.com</p>
+        <p><span class="contact-icon"><i data-feather="instagram"></i></span>Instagram: @Eiisoftboyy</p>
+    </div>
+    
+    <div class="container">
+        <h1 id="guestbook">Guestbook</h1>
+        <form class="guestbook-form" onsubmit="return validateForm()">
+            <input type="text" placeholder="Nama" id="name">
+            <input type="text" placeholder="Email" id="email">
+            <textarea placeholder="Pesan" id="message"></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+    
+    <footer>
+        &copy; 2023 Ikbaar zaki. All rights reserved.
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    
+    <script>
+        feather.replace();
+    </script>
+    
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+    
+            if (name === "" || email === "" || message === "") {
+                alert("Silakan lengkapi semua field!");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

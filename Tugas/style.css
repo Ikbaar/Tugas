@@ -1,0 +1,139 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c6c3c3;
+}
+
+nav {
+    background: #333;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #333;
+}
+
+nav ul li a:hover {
+    background-color: #1E90FF;
+}
+
+.container {
+    margin: 20px;
+}
+
+h1 {
+    font-family: "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+p {
+    color: #000000;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Tambahkan gaya untuk foto */
+.profile-image {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, #1E90FF, #000000);
+    border-radius: 5px;
+}
+
+/* Ubah tampilan guestbook */
+.guestbook-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.guestbook-form input[type="text"],
+.guestbook-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.guestbook-form input[type="text"]:focus,
+.guestbook-form textarea:focus {
+    border-color: #1E90FF;
+}
+
+.guestbook-form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.guestbook-form button:hover {
+    background-color: #1E90FF;
+}
+
+/* Tambahkan gaya untuk tampilan responsif pada guestbook */
+@media screen and (max-width: 600px) {
+    .container {
+        margin: 10px;
+    }
+
+    .guestbook-form {
+        max-width: 100%;
+    }
+}
+
+/* Tambahkan gaya untuk ikon */
+.contact-icon {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 5px;
+    color: #1E90FF;
+}
+
+.icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.icon i {
+    margin-right: 5px;
+    color: #1E90FF;
+}
